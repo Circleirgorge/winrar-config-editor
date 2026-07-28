@@ -1,0 +1,94 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1210"/>
+      <stop offset="55%" stop-color="#241512"/>
+      <stop offset="100%" stop-color="#160d0b"/>
+    </linearGradient>
+    <linearGradient id="archiveBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8492c"/>
+      <stop offset="100%" stop-color="#a5271a"/>
+    </linearGradient>
+    <linearGradient id="archiveTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffb347"/>
+      <stop offset="100%" stop-color="#f0742c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6a3d" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ff6a3d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="textGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffe0c9"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- ambient glow behind archive -->
+  <circle cx="960" cy="180" r="230" fill="url(#glow)"/>
+
+  <!-- faint grid texture -->
+  <g stroke="#3a2620" stroke-width="1" opacity="0.25">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+  </g>
+
+  <!-- scattered "bytes" being pulled into archive -->
+  <g fill="#ffb37a" opacity="0.6">
+    <rect x="740" y="70" width="14" height="14" rx="2"/>
+    <rect x="1080" y="90" width="10" height="10" rx="2"/>
+    <rect x="1120" y="200" width="12" height="12" rx="2"/>
+    <rect x="700" y="260" width="10" height="10" rx="2"/>
+    <rect x="1050" y="280" width="14" height="14" rx="2"/>
+  </g>
+  <g stroke="#ff7a45" stroke-width="2" opacity="0.55" fill="none">
+    <line x1="747" y1="84" x2="880" y2="150"/>
+    <line x1="1085" y1="100" x2="960" y2="150"/>
+    <line x1="1126" y1="212" x2="1000" y2="190"/>
+    <line x1="705" y1="266" x2="870" y2="210"/>
+    <line x1="1057" y1="286" x2="990" y2="230"/>
+  </g>
+
+  <!-- compressed archive box (RAR icon inspired) -->
+  <g transform="translate(870,90)">
+    <rect x="0" y="30" width="180" height="150" rx="10" fill="url(#archiveBody)" stroke="#7a1d12" stroke-width="3"/>
+    <rect x="0" y="30" width="180" height="34" rx="10" fill="url(#archiveTop)"/>
+    <rect x="76" y="0" width="28" height="34" fill="#ffb347"/>
+    <rect x="76" y="0" width="28" height="34" fill="none" stroke="#a5271a" stroke-width="2"/>
+
+    <!-- zip teeth line -->
+    <rect x="84" y="34" width="12" height="14" fill="#3a1610"/>
+    <rect x="84" y="60" width="12" height="14" fill="#3a1610"/>
+    <rect x="84" y="86" width="12" height="14" fill="#3a1610"/>
+    <rect x="84" y="112" width="12" height="14" fill="#3a1610"/>
+    <rect x="84" y="138" width="12" height="14" fill="#3a1610"/>
+
+    <!-- compression arrows pointing inward -->
+    <path d="M20 100 L45 88 L45 112 Z" fill="#ffe3c8"/>
+    <path d="M160 100 L135 88 L135 112 Z" fill="#ffe3c8"/>
+
+    <text x="90" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="bold" fill="#3a1610" text-anchor="middle">RAR</text>
+  </g>
+
+  <!-- decorative diagonal speed/compression lines -->
+  <g stroke="#ff8552" stroke-width="2" opacity="0.3">
+    <line x1="600" y1="40" x2="700" y2="10"/>
+    <line x1="620" y1="330" x2="720" y2="300"/>
+    <line x1="1150" y1="40" x2="1100" y2="70"/>
+  </g>
+
+  <!-- headline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="66" font-weight="bold" fill="url(#textGlow)">
+    <tspan x="60" y="150" textLength="1000" lengthAdjust="spacingAndGlyphs">WinRAR Full Version</tspan>
+    <tspan x="60" y="228" textLength="480" lengthAdjust="spacingAndGlyphs">Download</tspan>
+  </text>
+
+  <!-- tagline -->
+  <text x="60" y="272" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#ffcbab" opacity="0.9" textLength="760" lengthAdjust="spacingAndGlyphs">Extract, archive, compress — full WinRAR, one installer</text>
+
+  <!-- underline accent -->
+  <rect x="60" y="288" width="220" height="4" fill="#ff6a3d" opacity="0.8"/>
+</svg>
